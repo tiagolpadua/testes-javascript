@@ -131,4 +131,3 @@ npm install --save-dev gulp gulp-clean gulp-htmlmin gulp-include gulp-inject gul
 
 * browser-sync start --server --files .
 > http://blog.caelum.com.br/browser-sync-indispensavel-para-desenvolver-sites-em-varios-dispositivos/
-
