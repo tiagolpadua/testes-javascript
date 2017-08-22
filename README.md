@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # JavaScript
 
 ## Geral
@@ -132,7 +131,3 @@ npm install --save-dev gulp gulp-clean gulp-htmlmin gulp-include gulp-inject gul
 
 * browser-sync start --server --files .
 > http://blog.caelum.com.br/browser-sync-indispensavel-para-desenvolver-sites-em-varios-dispositivos/
-
-=======
-# testes-javascript
->>>>>>> 206d8ee5521caaad31fc94bf0077627afc89a919
