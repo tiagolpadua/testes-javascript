@@ -1,23 +1,18 @@
 {
-  "name": "testes-javascript",
+  "name": "testes-js",
   "version": "1.0.0",
-  "description": "Código fonte para post no blog da Caelum",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "karma start",
-    "start": "gulp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "GPL3",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "jasmine-core": "^2.7.0",
-    "jscs": "^3.0.7",
+    "jasmine-core": "^2.8.0",
     "karma": "^1.7.0",
-    "karma-jasmine": "^1.1.0",
-    "karma-phantomjs-launcher": "^1.0.4",
-    "serve-static": "^1.12.4"
-  },
-  "dependencies": {
-    "jquery": "^3.2.1"
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
   }
 }
