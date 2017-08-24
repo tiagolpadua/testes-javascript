@@ -4,31 +4,14 @@ var cepUtil = (function () {
   'use strict';
 
   function validar(cep) {
-    return /^[0-9]{2}.[0-9]{3}-[0-9]{3}$/.test(cep);
-  }
-
-  function colocarMascara(cepSemFormatacao) {
-    var cepFormatado;
-    if (cepSemFormatacao.length === 8) {
-      cepFormatado = cepSemFormatacao.substring(0, 2) +
-        '.' + cepSemFormatacao.substring(2, 5) +
-        '-' + cepSemFormatacao.substring(5, 8);
+    var objER = /^[0-9]{2}.[0-9]{3}-[0-9]{3}$/;
+    if (!cep || !objER.test(cep)) {
+      return false;
     }
-
-    if (validar(cepFormatado)) {
-      return cepFormatado;
-    } else {
-      throw 'Número inválido';
-    }
-  }
-
-  function retirarMascara(cepFormatado) {
-    return cepFormatado.replace(/\.|\-/g, '');
+    return true;
   }
 
   return {
-    colocarMascara: colocarMascara,
-    retirarMascara: retirarMascara,
     validar: validar
   };
 })();
