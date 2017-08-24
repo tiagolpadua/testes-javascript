@@ -2,24 +2,27 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Testes Java Script</title>
-    <script src="js/index.js"></script>
-    <script src="js/util/cepUtil.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Testes Java Script</title>
 </head>
 
 <body>
-    <section>
-        <article>
-            <form id="form">
-                <input type="text" placeholder="Informe o Cep" name="cep" class="input-cep">
-                <button type="submit">Enviar</button>
-            </form>
-            <p id="endereco"></p>
-        </article>
-    </section>
+  <section>
+    <article>
+      <form id="form">
+        <input type="text" placeholder="Informe o Cep" name="cep" class="input-cep">
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="endereco"></p>
+    </article>
+  </section>
+
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/cepUtil.js"></script>
+  <script src="js/enderecoService.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

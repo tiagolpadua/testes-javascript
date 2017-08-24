@@ -1,8 +1,9 @@
 /* global jQuery: false */
 /* global cepUtil: false */
 /* global Promise: false */
+/* exported enderecoService */
 
-var todosEnderecos = (function ($) {
+var enderecoService = (function ($) {
   'use strict';
 
   function buscarPorCep(cep) {

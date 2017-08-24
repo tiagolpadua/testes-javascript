@@ -1,6 +1,8 @@
-'use strict';
+/* exported cepUtil */
 
 var cepUtil = (function () {
+  'use strict';
+
   function validar(cep) {
     return /^[0-9]{2}.[0-9]{3}-[0-9]{3}$/.test(cep);
   }

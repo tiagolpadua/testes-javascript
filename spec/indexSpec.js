@@ -1,14 +1,12 @@
-'use strict';
 (function () {
+  'use strict';
 
   var endereco = {
     cep: '70.673-410',
     logradouro: 'SQSW 304 bloco j'
   };
 
- function criarSpyNoEndereco() {
-
-
+  function criarSpyNoEndereco() {
     var promisseFake = {
       then: function (resolve) {
         return resolve(endereco);
