@@ -2,9 +2,7 @@
   'use strict';
 
   describe('Busca por UF, cidade, Logradouro', function () {
-
     describe('deve retornar endereços', function () {
-
       var enderecos;
 
       beforeEach(function (done) {
@@ -29,12 +27,10 @@
   });
 
   describe('Busca por Cep', function () {
-
     describe('não deve retornar endereço', function () {
-
       var mensagem;
-      beforeEach(function (done) {
 
+      beforeEach(function (done) {
         todosEnderecos.buscarPorCep('aaa')
           .catch(function (retorno) {
             mensagem = retorno;
@@ -43,17 +39,15 @@
       });
 
       it('quando cep for inválido', function () {
-
         expect(mensagem).toBe('cep inválido');
       });
     });
 
     describe('deve retornar endereço', function () {
-
       jasmine.DEFAULT_TIMEOUT_INTERVAL = 90000;
       var endereco;
-      beforeEach(function (done) {
 
+      beforeEach(function (done) {
         todosEnderecos.buscarPorCep('70.673-410')
           .then(function (retorno) {
             endereco = retorno;
@@ -62,7 +56,6 @@
       });
 
       it('quando cep for válido', function () {
-
         expect(endereco.bairro).toBe('Setor Sudoeste');
         expect(endereco.localidade).toBe('Brasília');
       });
