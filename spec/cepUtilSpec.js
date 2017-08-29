@@ -6,7 +6,7 @@ describe('cepUtil é uma biblioteca destinada ao tratamento de CEP', function ()
         it('Deve invalidar se a máscara não for informada', function () {
             expect(cepUtil.validar('70673410')).toBeFalsy();
         });
-        it('Deve invalidar se houverem caracteres alfabéticos', function () {
+        it('Deve invalidar se houver caracteres alfabéticos', function () {
             expect(cepUtil.validar('70.673-41X')).toBeFalsy();
         });
         it('Deve invalidar se a quantidade de números estiver incorreta', function () {
