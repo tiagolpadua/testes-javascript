@@ -9,7 +9,27 @@ var cepUtil = (function () {
         return true;
     }
 
+    var colocarMascara = function (cepSemFormatacao) {
+
+        var cepFormatado;
+        //deixar somente == e ver que vai dar erro futuramente no jshint
+        if (cepSemFormatacao.length === 8) {
+            cepFormatado = cepSemFormatacao.substring(0, 2) +
+                '.' + cepSemFormatacao.substring(2, 5) +
+                '-' + cepSemFormatacao.substring(5, 8);
+        }
+        return validar(cepFormatado) ? cepFormatado : cepSemFormatacao;
+
+    };
+
+    var retirarMascara = function (cepFormatado) {
+
+        return cepFormatado.replace(/\.|\-/g, '');
+    };
+
     return {
+        colocarMascara: colocarMascara,
+        retirarMascara: retirarMascara,
         validar: validar
     };
 })();
